@@ -19,18 +19,12 @@ public class Organ {
 
     // Getters and Setter for the private variables
     public String getName() {
-        return name;
+       return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getMedicalCondition() {
         return medicalCondition;
     }
 
-    public void setMedicalCondition(String medicalCondition) {
-        this.medicalCondition = medicalCondition;
-    }
 }
