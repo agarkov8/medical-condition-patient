@@ -1,6 +1,8 @@
 package com.company.patient;
 
 public class Patient {
+
+    //Declaring variables
     private String name;
     private  int age;
 
@@ -10,6 +12,7 @@ public class Patient {
     private Stomach stomach;
     private Skin skin;
 
+    //Declaring the Constructor
     public Patient(String name, int age, Eye leftEye, Eye rightEye, Heart heart, Stomach stomach, Skin skin) {
         this.name = name;
         this.age = age;
@@ -20,6 +23,7 @@ public class Patient {
         this.skin = skin;
     }
 
+    //Getters and Setters of all variables
     public String getName() {
         return name;
     }

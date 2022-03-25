@@ -3,7 +3,10 @@ package com.company.patient;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
+
+        //Create an object of a patient ; Create Objects inside the Object
         Patient patient = new Patient("Brad", 28,
                 new Eye("Left Eye","Short-sighted", "Blue",true),
                 new Eye("Right Eye","Normal","Blue",true),
@@ -11,14 +14,20 @@ public class Main {
                 new Stomach("Stomach","PUD",false),
                 new Skin("Skin","Burned","White",40));
 
+
         System.out.println("Name: " + patient.getName());
         System.out.println("Age: " + patient.getAge());
 
+        //Creating a Scanner object
         Scanner scanner = new Scanner(System.in);
 
+        //Declare a variable, which shows us when to end the program
         boolean shouldFinish = false;
 
+        //Loops until "shouldFinish" is true
         while (!shouldFinish){
+
+            //Output information
             System.out.println("Choose an Organ:");
             System.out.println("\n\t1. Left eye");
             System.out.println("\n\t2. Right eye");
@@ -27,7 +36,9 @@ public class Main {
             System.out.println("\n\t5. Skin");
             System.out.println("\n\t6. Quit");
 
+            //Looking for the Input of the user
             int choice = scanner.nextInt();
+
             switch (choice){
 
                     case 1:
